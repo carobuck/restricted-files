@@ -2,22 +2,48 @@ project:
   type: book
 
 book:
-  title: "restricted-files"
-  author: "Jane Doe"
+  title: "The Restricted Files"
+  author: "Claire"
+  cover-image: images/cover.png
+  site-url: https://rstudio-education.github.io/hopr/
+  repo-url: https://github.com/carobuck/restricted-files
+  repo-branch: main
+  repo-actions: [edit]
   date: "8/10/2022"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+    - prologue.qmd
+    - 1-paradise.qmd
+    - 2-convergence.qmd
+    - 3-love.qmd
+    - 4-shattered.qmd
+    - 5-betrayal.qmd
+    - 6-cat.qmd
+    - 7-lies.qmd
+    - 8-overthinking.qmd
+    - 9-intoxicating.qmd
+    - 10-trouble.qmd
+    - 11-psa.qmd
+    - 12-blurred.qmd
+    - 13-thanks.qmd
+    - 14-sneak.qmd
+    - 15-chaos.qmd
+    - 16-execution.qmd
+    - 17-carrot.qmd
+    - 18-rainstorm.qmd
+    - 19-dispersion.qmd
+    - 20-bye.qmd
+    - 21-pottery.qmd
+    - 22-human.qmd
+    - 23-shepherds.qmd
+    - 24-egad.qmd
+    - 25-stompy.qmd
+    - 26-end.qmd
+    - epilogue.qmd
+  appendices: 
+    - a-art.qmd
 
 format:
-  html:
+  html: 
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
-
-
-
+    cover-image: cover.png
