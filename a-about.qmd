@@ -1,0 +1,30 @@
+---
+title: "About the Author"
+about:
+  template: trestles
+  image: "imgs/clr_author.jpg"
+  links:
+    - icon: twitter
+      text: Twitter
+      href: "https://twitter.com/chaire_nottaken"
+    - icon: twitch
+      text: Twitch
+      href: "https://www.twitch.tv/chaireeee"
+    - icon: instagram
+      text: Instagram
+      href: "https://www.instagram.com/kryp_ta/"
+    - icon: youtube
+      text: YouTube
+      href: "https://www.youtube.com/channel/UCzYjI4sYTUeI5v-QZmO16Rg"
+---
+
+Hey. I'm Claire. I'm an author, artist and streamer. This is my debut novel.
+
+## Experience
+
+*Doing things*
+
+Procreate | YouTube | Dogs | Blah blah | Hi
+
+If you know me, you know the keys to my heart are my dog, my rat and my art tools.
+

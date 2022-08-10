@@ -42,6 +42,7 @@ book:
     - epilogue.qmd
   appendices: 
     - a-art.qmd
+    - a-about.qmd
 
 format:
   html: 
