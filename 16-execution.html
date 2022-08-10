@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.16">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Restricted Files - 16&nbsp; Execution</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./17-carrot.html" rel="next">
+<link href="./15-chaos.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Execution</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The Restricted Files</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/carobuck/restricted-files" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prologue.html" class="sidebar-item-text sidebar-link">Prologue</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-paradise.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Interrupted Paradise</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-convergence.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Discordant Convergence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-love.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">“Love”</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4-shattered.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Shattered</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5-betrayal.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Betrayal</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6-cat.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Cat and Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7-lies.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Pretty Little Lies</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8-overthinking.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Overthinking? Overthinking. Over…thinking. Oh-ver think-ing?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./9-intoxicating.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Intoxicating, her presence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-trouble.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The Trouble Miss Aspen-Fauna has been Getting Into</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11-psa.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Public Service Announcements</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12-blurred.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Blurred Lines</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13-thanks.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Thanks-Taking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14-sneak.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Sneaking Around in Plain Sight</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15-chaos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Organized Chaos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16-execution.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Execution</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17-carrot.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Carrot Soup Conference</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18-rainstorm.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">A Rainstorm’s Cleansing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19-dispersion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Dispersion of The Agents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20-bye.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">When Do “Byes” Become Permanent?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21-pottery.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Shattered Pottery</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22-human.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Human Remains</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23-shepherds.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Shepherds</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24-egad.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">eGaD! pOsitivEly gHastLy, thiS Is!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25-stompy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">stompy stompy odin angy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./26-end.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Gir</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./epilogue.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">epilogue.html</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+    <div class="sidebar-item-container"> 
+        <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
+      <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+        <i class="bi bi-chevron-right ms-2"></i>
+      </a>
+    </div>
+    <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-art.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Supporting Artwork</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./a-about.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">About the Author</span></a>
+  </div>
+</li>
+    </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Execution</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>December 8, 11:36 P.M.: Adonis finished writing on the piece of paper and placed it on top of Aspen’s dress they had folded on the bed. “Adonis, hurry up! We have to go now!” Sam whisper-yelled from the door. “Coming, coming!” He grabbed his bag and followed Sam out the door. Aspen waited in the hall next to them. Finally, we’re leaving this hell-hole, Adonis thought, relieved. Sam closed the doors and they waited one moment longer to make sure no one was coming right away. The guards had finally returned to their posts roughly an hour after Odin went through the area that afternoon, and the rotation continued as normal. “I think it’s clear,” Aspen said. None of them had shoes, which gave them the advantage of stealth, but would put them at a disadvantage when they got outside to the cold. Aspen, Sam and Adonis started running to the closest passageway entrance. They had only gotten ten feet from their rooms when Sam suddenly stuck his arms out to stop them, yanking all three of them behind a plant pot as the sounds of walking echoed through the hall. Sam, Adonis and Aspen all looked between each other, willing a plan to miraculously pop into one of their minds. The pot was bulky, but definitely not large enough to hide three adults. The walking got closer, and Sam leaned out the smallest bit to make sure they were guards. His stomach dropped as he recognized one of them; it was the young guard Francis had given trouble to on both days when he came to the agent’s rooms. Neither Sam nor Adonis recognized him for this, but he was also the second guard who delivered Sam after his trip to the basement. The guard who didn’t ridicule him, deciding to just leave him on his bed while the first guard kicked his foot and laughed. Sam froze for a second, wondering if the guard had overheard them making plans and even reported them to Odin. He leaned out for too long and the second guard saw him. “Hey, did you see that?” a flashlight flicked on. “See what? That’s just a plant pot,” the young guard dismissed the first guard’s question. “No, no look! I think there’s someone behind it,” the first voice said. “Get out from behind the pot! We know you’re there!” A loud cracking sound, like a whip, suddenly echoed in the hall. The first guard had dropped his flashlight. “Oh my goodness, I’m so sorry! I couldn’t see your hand,” the second voice said. He had bumped into the first guard’s arm by accident. “Is it broken?” “Yes, it’s broken,” he answered gruffly. “Do you have your flashlight on you?” “No, I left it behind tonight.” “Alright, whatever then. It was probably just nothing. Make sure you have your flashlight from now on, newbie.” “Yeah, alright.” The guards walked right past the pot. The second guard walked on the side closest to them, and as he went by, he quickly pulled out his flashlight, leaned to Aspen, and dropped it in her lap. Aspen mouthed thank you. The guard nodded and kept walking as if nothing had happened. Sam, who sat in between Adonis and Aspen, tapped their kneecaps and carefully shifted onto his hands and knees. Following Sam’s lead, the three slowly crawled away, casting looks over their shoulders to make sure the first guard wouldn’t stop them. The second guard watched them crawl away. It was so dark he could barely detect their fuzzy outlines. He was planning on reporting them after he overheard their entire conversation; it was a good idea as he was still a new guard, and he wanted to garner favor with Odin. But he chose not to. He was only fifteen; still fresh out of the ‘children’s program’ that finished when you were fourteen. His older sister never was in the program, as she was seventeen when it began. His younger sister was still stuck at camp, and she was so young that he feared she was slowly falling for Odin’s psychological trickery. When he had reluctantly moved into the mansion, loath to leave behind the friends he had made up there and his aforementioned sister, he hated even more that his dear little sister was openly jealous that she couldn’t move closer to Odin as well. She acted like she had a deep desire to please Odin; Odin, a man who was the flesh reincarnation of the real Nordic god in her naive eyes. It greatly disturbed him how good her acting was. She better be acting. The alternative, that her seven-year-old mind genuinely wanted to be a slave for Odin, reviled him too much to believe. He tore his eyes away from the agents’ and Aspen’s retreating backs, looking quickly to the older guard on the opposite side of the doorframe, then fixing his gaze to the floor. He fingered the top of his belt, staring blankly at the glazed tile in front of him as if it could take away the shame that burrowed in him. As much as he loved his sister, as much as he loved his friends that were still as stuck as him, his love for them was not enough to get over his fear of Odin. Maybe they’ll be able to do it though. That’s why I didn’t report their conversations I overheard to Odin. I know I’m being selfish and scared, relying on other people to fix problems that are mine, but I just could not do it. But not telling Odin; that was my stand! My personal safety is basically nothing compared to the hundreds I could’ve just helped by letting them go. This will ruin my life. He shuddered then concealed a sly grin. Psh, why am I lying? My life can’t be ruined if I don’t have one. At least I’ve given them a head start away from Odin.</p>
+<pre><code>Aspen pressed the flashlight into Sam’s hand and removed the wall panel to the passageway, pushing Adonis in first when he hesitated. Sam flicked on the flashlight after she closed them in. She grabbed the flashlight from Sam and led confidently, walking Sam and Adonis through a labyrinthine course that was even shorter than the one they already had planned from Francis’ crude map. Aspen turned the light off as soon as she saw the wisp of fabric of the laundry room fluttering in front of them. She stepped out, checking no one was lying in wait, and signaled the agents to follow her a moment later. 
+“Hey-!” Aspen’s outburst was muffled. Sam and Adonis halted right behind the fabric, crouching in the shadows. “Put me down!”
+Sam forced his eyes wider, willing more light to come into existence, trying to decipher what was happening. A hulking, wiggling mass was all he could spot. “No. Right now, you’re gonna listen to me, and you better remember everything I have to say. I have been nothing but a faithful, diligent husband. You have been nothing but a lying wench. Who took you in after you aged out of the adoption system? Who gave you a home, a good life?” 
+Aspen didn’t answer. It became clear to Sam that part of the hulking, wiggling mass was Odin.
+Odin bent his head closer to her ear. “Who knows you so well that he can guess how you’re going to escape?”
+“Who has a knife and is going to slice your throat unless you release Aspen and let us leave?” Sam now stood behind Odin. He clenched the front of Odin’s throat with his left hand and trained the knife on the back of Odin’s throat with his right. One small jerk stood between Odin’s life and death; Sam resisted slashing the tender skin only so he wouldn’t become a murderer. Still, he allowed himself to press the blade in enough to leave a small cut, though hopefully deep enough to leave a permanent, ugly scar on Odin’s precious neck. 
+Sam felt Odin tense, struggling to breath underneath Sam’s iron grip. Sam knew his fingers were going to leave bruises. Odin froze but didn’t let go of Aspen. Off to the side, Adonis hefted an iron he had found on a shelf, ready to smack Odin if he refused to release Aspen from his grip. 
+Odin’s pulse fluttered in his neck, pulsing his blood onto the knife tip. Sam hovered the knife only slightly off Odin’s neck, and a thin line of his blood wound down the blade and Sam’s hand, weaving between his fingers. 
+“C’mon Odin, do something decent for once,” Sam fervently whispered.
+Odin cussed with the small amount of air he had left in his lungs. He finally let Aspen out of his arms. 
+“Aspen, Adonis, go. I’ll catch up,” Sam commanded. They had no time to debate, so they crept out. Sam walked backwards to the door, still clutching Odin. He lifted the knife from his neck to bring his arm up, then smashed his elbow onto the crown of Odin’s head. He slumped to the floor. Sam let himself out of the door, kicked Odin’s limp feet back over the threshold, and slammed it shut. He sprinted to the shed. The ground was slick and he struggled to stay upright, especially without the assistance of snow boots. He sped past a guard, who was briefly frozen in confusion, but then they raised a shout. The guard started chasing, quickly gaining on Sam because they did have snow shoes. Sam gave up on running and jumped, thrusting his bag underneath him, landing on it and sliding across the ice. His ride stopped when he smashed into the side of the slightly-rotted planks of the shed. His shoulder and the side of his ribs throbbed from his crash, but he immediately launched himself away from the wall, stumbling to the overgrown storm drain. He almost missed it in the wan light, but the grate opened from the inside and Sam saw Adonis’ face. He chucked his duffel bag into the dark hole and crumpled to the ground to follow, squeezing through the narrow opening, nearly falling on top of Aspen. Adonis dropped the grate. The trio crouched low, listening to the guard pounding around above and hoping they wouldn’t shine their flashlight down the hole. 
+“Let’s go,” Adonis whispered. They stood and walked away from Odin Manor, retreating through the square concrete passages. </code></pre>
+<p>↞⇼↠</p>
+<p>December 9, 4:07 A.M.: Odin read the note again and again, shaking with rage. I should have just killed her. Killed them. Killed all of them. How stupid was I to let them go? He crumpled the slip of paper and threw it and the dress it had been resting on out of the window. If Aspen wanted it back, she could always just get the dress herself. The only thing the note had said was, in a very messy, sloped scrawl: ‘I hate you. I hope you have a horrible life! -Adonis.’ Odin picked up his sword from the floor and clenched the handle. He had been walking around with it all night, refusing to put it back on its holders until he got the chance to use it. Flexing his wrist, he glared at the silvery blade, slowly turning the sword one rotation. He left Adonis’ room and stalked to the basement.</p>
+<p>“Any final words? Any desire to admit your guilt so you can die with a clean mind?” Odin asked the thin, shivering boy in front of him. He had seen the security footage this morning, and this weakling in front of him was clearly part of the escape plan. “No.&nbsp;My ‘mind’ is plenty clean, thank you,” the guard said. “Rest well,” Odin said. Sam hadn’t killed Odin because he didn’t want to wear the title of ‘murderer.’ Odin had no such reservations. He swiped his sword, felt the razor edge catch on muscle and bone momentarily, then slash through. He watched the young guard, nameless to him like so many other children, breathe for the last time, blink for the last time. He watched the boy fall for the last time, watched his head topple. Odin watched his ruby blood splatter. He watched the fifteen-year-old boy die. Odin knelt to wipe the blood off on the guard’s own uniform. He ordered the guard’s comrade to dispose of the body.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./15-chaos.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Organized Chaos</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./17-carrot.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Carrot Soup Conference</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
