@@ -46,5 +46,5 @@ book:
 
 format:
   html: 
-    theme: cosmo
+    theme: morph
     cover-image: cover.png
