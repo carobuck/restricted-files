@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&family=Major+Mono+Display');
+  //$font-family: 'Roboto Flex', sans-serif;
+  //$font-family-sans-serif: "Barlow", serif !default;
+  //$font-family-sans-serif: "Work Sans", serif !default
+  
+  // Fonts
+$font-family-sans-serif: "Sono";
+  
+  // colors
+  $body-bg: #000000;
+  $body-color: #ffffff ;
+  $link-color: #00D1D8 ;
+  $selection-bg: #1F4252 !default;
+  
+
+
+  /*-- scss:rules --*/
+// https://stackoverflow.com/questions/73570888/change-title-size-and-color-in-quarto-html-output
+.title {
+  font-family: "Major Mono Display";
+}
+
+.portfolio {
+    color: #3a3b3c;
+    font-family: "Sono";
+    font-size: small;
+  }
+  .caption {
+    color: #3a3b3c;
+    font-size: small;
+    font-style: italic;
+  }
+  .bullets {
+    color: #3a3b3c;
+    font-family: "Sono";
+    font-size: small;
+    font-style: italic;
+  }
+
+

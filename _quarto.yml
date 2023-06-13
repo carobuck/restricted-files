@@ -4,7 +4,6 @@ project:
 book:
   title: "The Restricted Files"
   author: "Claire"
-  cover-image: images/cover.png
   site-url: https://restricted-files.netlify.app/
   repo-url: https://github.com/carobuck/restricted-files
   repo-branch: main
@@ -46,5 +45,6 @@ book:
 
 format:
   html: 
-    theme: morph
-    cover-image: cover.png
+    theme: 
+      - morph
+      - styles.scss
